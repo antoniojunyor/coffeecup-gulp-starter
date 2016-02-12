@@ -1,0 +1,28 @@
+{
+  "name": "coffeecup-gulp-starter",
+  "description": "A boilerplate project with gulp.js",
+  "main": "gulpfile.js",
+  "authors": [
+    "Antonio Junior"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "boilerplate",
+    "starter",
+    "coffeecup",
+    "gulp",
+    "bower"
+  ],
+  "homepage": "https://github.com/antoniojunyor/coffeecup-gulp-starter",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^2.2.0"
+  }
+}
