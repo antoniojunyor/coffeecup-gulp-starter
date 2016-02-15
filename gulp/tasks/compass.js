@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-    compass = require('gulp-compass');
+    compass = require('gulp-compass'),
+    livereload = require('gulp-livereload');
 
 gulp.task('compass', () => {
   gulp.src('source/assets/stylesheets/*.sass')
@@ -9,4 +10,5 @@ gulp.task('compass', () => {
     sass: 'source/assets/stylesheets',
     image: 'source/assets/images'
   }))
+  .pipe(livereload());
 })
