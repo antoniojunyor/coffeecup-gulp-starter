@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     coffee = require('gulp-coffee');
 
 // Watch
-gulp.task('watch', function() {
+gulp.task('watch', () => {
   gulp.watch('source/assets/stylesheets/**.sass', ['compass']);
   gulp.watch('source/assets/javascripts/coffee/*.coffee', ['coffee']);
   gulp.watch('source/assets/javascripts/*.js', ['concatjs']);
