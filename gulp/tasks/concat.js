@@ -4,9 +4,7 @@ var gulp = require('gulp'),
 
 gulp.task('concatjs', () => {
   return gulp.src([
-    'source/assets/javascripts/_home.js',
-    'source/assets/javascripts/_contact.js',
-    'source/assets/javascripts/_link.js',
+    // List yours JS files here :)
   ])
   .pipe(babel({
     presets: ['es2015']
