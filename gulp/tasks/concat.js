@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
-    babel = require('gulp-babel');
+    babel = require('gulp-babel'),
+    livereload = require('gulp-livereload');
 
 gulp.task('concatjs', () => {
   return gulp.src([
@@ -10,5 +11,6 @@ gulp.task('concatjs', () => {
     presets: ['es2015']
   }))
   .pipe(concat('app.js'))
-  .pipe(gulp.dest('source/assets/javascripts/'));
+  .pipe(gulp.dest('source/assets/javascripts/'))
+  .pipe(livereload());
 });
